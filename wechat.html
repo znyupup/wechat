@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<style type="text/css">
+	body{
+		background-color: #f1f1f1;
+	}
+	li{
+		list-style: none;
+		display: inline-block;
+	}
+	ul{
+		border-bottom: 1px solid #f1f1f1;
+		padding-bottom: 10px;
+	}
+	ul, li, p{
+		margin: 0;
+		padding: 0;
+	}
+	.price{
+		float: right;
+		padding: 30px;
+	}
+	.priceTag{
+		width: 80px;
+		height: 40px;
+		text-indent: -999em;
+		border: none;
+		box-shadow: none;
+		background: url(./image/priceTag.png);
+	}
+	#box{
+		width: 400px;
+		height: 710px;
+		background-color: white;
+		background-image: url('./image/bkg.png');
+		background-repeat: no-repeat;
+		padding-top: 79px;
+	}
+	.clearFloat{
+		clear: both;
+	}
+	</style>
+	<script language="JavaScript" type="text/javascript">
+	function stopgif(pic){
+
+	}
+	</script>
+</head>
+<body>
+	<div id='box'>
+		<ul>
+			<li> <img src="./jiwawa.gif" alt="image1" id='img1'/> </li>
+			<li><p>哆啦A梦</p> <p>来自未来的机器猫</p></li>
+			<li class='price'><button type='button' class='priceTag'>￥6.00</button></li>
+			<div class='clearFloat'></div>
+		</ul>
+		
+		<img src="./bigface.jpeg" alt="image2" id='img2'/>
+		<a href="javascript:void(0);" onclick="stopgif(img2);">test</a>
+	</div>
+</body>
+</html>
