@@ -1,7 +1,7 @@
 body{
 	background-color: #f1f1f1;
 }
-li{
+#box li{
 	list-style: none;
 	padding-bottom: 10px;
 	display: block;
@@ -11,9 +11,9 @@ ul, li, p, body,div{
 	margin: 0;
 	padding: 0;
 }
-.price{
+#downbutton{
 	float: left;
-	padding: 30px;
+	padding: 200px;
 }
 .priceTag{
 	width: 120px;
@@ -39,10 +39,10 @@ ul, li, p, body,div{
 	height: 720px;
 	background-color: #dddddd;
 	background: url(./image/detailbox.png);
-	border-radius: 20px;
-	position: fixed; 
+	border-radius: 10px;
+	position: absolute; 
 	top: 100px;
-	left: -50px;
+	left: 35px;
 	z-index: 20;
 	visibility: hidden;
     -webkit-backface-visibility: hidden;
@@ -74,13 +74,25 @@ ul, li, p, body,div{
 	-ms-transform: scale(1);
 	transform: scale(1);
 	opacity: 1;
-	position: fixed;
-	top: 200px;
-	left: 50px;
 }
 
 .image{
 	width: 300px;
+}
+
+.swiftbox{
+	overflow: hidden;
+}
+
+#swift{
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.downbutton{
+	background: #aaa;
+	transform-origin: 50% 100%;
+	transform: rotateX(-90deg) translateY(100%);
 }
 
 
