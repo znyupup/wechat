@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<style type="text/css">
 	@import url(./main.css);	
+	@import url(./button.css);
 	</style>
 	</style>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -33,24 +34,42 @@
 
 		setTimeout(
 			 function(){ //this function will be called after 5s
-			$('.fox').attr('src', './image/fox.jpeg'); //first animation
+			$('.dog').attr('src', './image/dog.jpg'); //first animation
 
 			//0
 			setTimeout(function(){
-				$('.fox').attr('src', './image/fox.png');
-				$('.monkey').attr('src', './image/monkey.gif'); //Second animation
+				$('.dog').attr('src', './image/dog.png');
+				$('.hair').attr('src', './image/hair.jpg'); //Second animation
 
 				setTimeout(function(){
-					$('.monkey').attr('src', './image/monkey.png');
-					$('.mogu').attr('src', './image/mogu.jpeg');
+					$('.hair').attr('src', './image/hair.png');
+					$('.girl').attr('src', './image/girl.gif');
 
 					setTimeout(function(){
-						$('.mogu').attr('src', './image/mogu.png');
-				 
+						$('.girl').attr('src', './image/girl.png');
+						$('.banana').attr('src', './image/banana.jpg');
+						setTimeout(function(){
+							$('.banana').attr('src', './image/banana.png');
+							$('.boy').attr('src', './image/boy.jpg');
+							setTimeout(function(){
+								$('.boy').attr('src', './image/boy.png');						 
+							}, 4800);				 
+						}, 3800);			 
 					}, 2800);
 				}, 2000);
 			}, 1600);
 		}, 1000); 
+
+		$('body').on('click', '.btn-8g' ,function(event) {
+			$(this).addClass('btn-success3d');
+			var self = this;
+
+			setTimeout(function(){
+				$('button.btn').html('下载完成')
+				$(self).removeClass('btn-success3d');
+			}, 2000);
+
+		});
 
 		//code in this will be called immediately
 	})
@@ -61,19 +80,31 @@
 	<div id='box'>
 		<ul>
 			<li> 
-				<img class='fox image' src="./image/fox.png"/>
+				<img class='dog image' src="./image/dog.png"/>
 				<div><span>哆啦A梦</span> <span>来自未来的机器猫</span></div>
 				<div class='price'><button type='button' class='priceTag'>￥6.00</button></div>
 				<div class='clearFloat'></div>
 			</li>
 			<li> 
-				<img class='monkey image' src="./image/monkey.png"/>
+				<img class='hair image' src="./image/hair.png"/>
+				<div><span>哆啦A梦</span> <span>来自未来的机器猫</span></div>
+				<div class='price'><button type='button' class='priceTag'>￥6.00</button></div>
+				<div class='clearFloat'></div>
+			</li>
+			<li> 
+				<img class='girl image' src="./image/girl.png"/>
 				<div><p>哆啦A梦</p> <p>来自未来的机器猫</p></div>
 				<div class='price'><button type='button' class='priceTag'>￥6.00</button></div>
 				<div class='clearFloat'></div>
 			</li>
 			<li> 
-				<img class='mogu image' src="./image/mogu.png"/>
+				<img class='banana image' src="./image/banana.png"/>
+				<div><p>哆啦A梦</p> <p>来自未来的机器猫</p></div>
+				<div class='price'><button type='button' class='priceTag'>￥6.00</button></div>
+				<div class='clearFloat'></div>
+			</li>
+			<li> 
+				<img class='boy image' src="./image/boy.png"/>
 				<div><p>哆啦A梦</p> <p>来自未来的机器猫</p></div>
 				<div class='price'><button type='button' class='priceTag'>￥6.00</button></div>
 				<div class='clearFloat'></div>
@@ -83,10 +114,10 @@
 
 	<div class='shadow'></div>
 	<div class='detailBox md-modal md-effect-1'  id="modal-1">
-	<ul>
-		<li class='swiftbox'> <img src="./image/1.gif"/ id='swift'> </li>
-		<li class='downbutton'><button type='button' class='priceTag'>￥6.00</button></li>
-	</ul>
+	
+		<div class='swiftbox'> <img src="./image/banner.gif"/ id='swift'> </div>
+		<div><button class="btn btn-8 btn-8g">下载</button></div>
+	
 	</div>
 </body>
 </html>

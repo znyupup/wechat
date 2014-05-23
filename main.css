@@ -6,6 +6,7 @@ body{
 	padding-bottom: 10px;
 	display: block;
 	float: left;
+	margin-left: 30px;
 }
 ul, li, p, body,div{
 	margin: 0;
@@ -24,9 +25,9 @@ ul, li, p, body,div{
 	background: url(./image/priceTag.png);
 }
 #box{
-	padding-top: 140px;
+	padding-top: 260px;
 	width: 640px;
-	height: 996px;
+	height: 876px;
 	background-color: white;
 	background-image: url('./image/bkg.png');
 	background-repeat: no-repeat;	
@@ -77,7 +78,7 @@ ul, li, p, body,div{
 }
 
 .image{
-	width: 300px;
+	width: 180px;
 }
 
 .swiftbox{
@@ -89,10 +90,9 @@ ul, li, p, body,div{
 	border-top-right-radius: 10px;
 }
 
-.downbutton{
-	background: #aaa;
-	transform-origin: 50% 100%;
-	transform: rotateX(-90deg) translateY(100%);
+.dog{
+	margin-left: 20px;
 }
+
 
 
